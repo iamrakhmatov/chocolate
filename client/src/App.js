@@ -14,8 +14,8 @@ function App() {
 	}, []);
 	return (
 		<div className='App'>
-			<header className='App-header'>
-        Hello From React
+			<header className='App-header' style={{'color': 'yellow'}}>
+        Hello from React
         <p style={{'color': 'green'}}> {!data ? 'Loading...' : data}</p>
         </header>
 		</div>
