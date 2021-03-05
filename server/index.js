@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 4000;
 const app = express();
 
 app.use(express.static(path.resolve(__dirname, "../client/build")));
-app.use(epxress.json());
+app.use(express.json());
 
 app.get("/api", (req, res) => {
 	res.json({ message: "Hello from Server!" });
